@@ -1,0 +1,126 @@
+:root {
+  font-size: 1em;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h1, h2, h3 {
+  font-family: "Fraunces", serif;
+}
+
+p {
+  font-family: "Barlow", sans-serif;
+}
+
+.desktop-nav {
+  display: none;
+}
+
+.mobile-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mobile-logo {
+  height: 1.5rem;
+}
+
+header {
+  text-align: center;
+  color: #FEFCF7;
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  background-image: url(/starter-code/assets/home/mobile/image-hero-coffeepress.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 10px;
+  margin-bottom: 7.5rem;
+}
+
+header h1 {
+  margin-bottom: 24px;
+  font-size: 2.5rem;
+}
+
+header p {
+  margin-bottom: 24px;
+  line-height: 1.5rem;
+  font-size: 0.9375rem;
+}
+
+header button {
+  text-align: center;
+  padding: 1.2rem;
+  background-color: #0E8784;
+  color: #FEFCF7;
+  border-radius: 10px;
+  border: none;
+  font-family: "Fraunces", serif;
+  cursor: pointer;
+  font-size: 1.2rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header button:hover {
+  opacity: 90%;
+}
+
+.our-collection {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.our-collection h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #83888F;
+  margin-bottom: 1.5rem;
+}
+
+.collection-container {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.collection-item img {
+  height: 151px;
+  margin-bottom: 1.5rem;
+}
+
+.collection-item h2 {
+  color: #333D4B;
+  margin-bottom: 1rem;
+}
+
+.collection-item p {
+  margin-bottom: 3rem;
+}
+/*# sourceMappingURL=main.css.map */
