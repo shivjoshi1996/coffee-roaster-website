@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   <link rel="stylesheet" href="../css/main.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Fraunces:wght@900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;800&family=Fraunces:wght@900&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Coffeeroasters subscription site</title>
 </head>
@@ -19,7 +19,8 @@
   </nav>
 
   <nav class="desktop-nav">
-    <ul>
+    <img class="desktop-logo" src="./assets/shared/desktop/logo.svg" alt="coffeeroasters">
+    <ul class="desktop-nav-links">
       <li>
         <a href="#">Home</a>
       </li>
@@ -46,26 +47,37 @@
 
       <div class="collection-item">
         <img src="./assets/home/desktop/image-gran-espresso.png" alt="image of coffee bag">
-        <h3>Gran Espresso</h3>
+        <div class="collection-information">
+          <h3>Gran Espresso</h3>
         <p>Light and flavorful blend with cocoa and black pepper for an intense experience</p>
+        </div>
       </div>
 
       <div class="collection-item">
         <img src="./assets/home/desktop/image-planalto.png" alt="image of coffee bag">
-        <h3>Planalto</h3>
-        <p>Brazilian dark roast with rich and velvety body, and hints of fruits and nuts</p>
+        <div class="collection-information">
+          <h3>Planalto</h3>
+          <p>Brazilian dark roast with rich and velvety body, and hints of fruits and nuts</p>
+        </div>
+        
       </div>
 
       <div class="collection-item">
         <img src="./assets/home/desktop/image-piccollo.png" alt="image of coffee bag">
-        <h3>Piccollo</h3>
-        <p> Mild and smooth blend featuring notes of toasted almond and dried cherry</p>
+        <div class="collection-information"> 
+          <h3>Piccollo</h3>
+          <p> Mild and smooth blend featuring notes of toasted almond and dried cherry</p>  
+        </div>
+        
       </div>
     
       <div class="collection-item">
         <img src="./assets/home/desktop/image-danche.png" alt="image of coffee bag">
-        <h3>Danche</h3>
-        <p>Ethiopian hand-harvested blend densely packed with vibrant fruit notes</p>
+        <div class="collection-information">
+          <h3>Danche</h3>
+          <p>Ethiopian hand-harvested blend densely packed with vibrant fruit notes</p>
+        </div>
+
       </div>
 
     </div>
@@ -88,23 +100,26 @@
 
 			<div class="benefit-card">
 				<img src="../starter-code/assets/home/desktop/icon-coffee-bean.svg" alt="">
-				<h3>Best quality</h3>
-				<p>Discover an endless variety of the world’s best artisan coffee from each of our roasters.</p>
-
+				<div class="benefit-information">
+          <h3>Best quality</h3>
+				  <p>Discover an endless variety of the world’s best artisan coffee from each of our roasters.</p>  
+        </div>
 			</div>
 
 			<div class="benefit-card">
-				<img src="../starter-code/assets/home/desktop/icon-gift.svg" alt="">
-				<h3>Exclusive benefits</h3>
-  			<p>Special offers and swag when you subscribe, including 30% off your first shipment.</p>
-
+				<img src="../starter-code/assets/home/desktop/icon-gift.svg" alt="">		
+        <div class="benefit-information">
+          <h3>Exclusive benefits</h3>
+  			  <p>Special offers and swag when you subscribe, including 30% off your first shipment.</p>
+        </div>
 			</div>
 
 			<div class="benefit-card">
 				<img src="../starter-code/assets/home/desktop/icon-truck.svg" alt="">
-				<h3>Free shipping</h3>
-  			<p>We cover the cost and coffee is delivered fast. Peak freshness: guaranteed.</p>
-
+				<div class="benefit-information">
+          <h3>Free shipping</h3>
+  			  <p>We cover the cost and coffee is delivered fast. Peak freshness: guaranteed.</p>
+        </div>
 			</div>
 
 		</div>
@@ -117,48 +132,74 @@
 		<div class="steps-container">
 
 			<div class="step">
-				01
-				Pick your coffee
-				Select from our evolving range of artisan coffees. Our beans are ethically 
-				sourced and we pay fair prices for them. There are new coffees in all profiles 
-				every month for you to try out.
 
-			</div>
+				<div class="step-number">
+          <h4>01</h4>
+        </div>
 
+        <div class="step-information">
+          <h3>Pick your coffee</h3>
+				  <p>Select from our evolving range of artisan coffees. Our beans are ethically sourced and we pay fair prices for them. There are new coffees in all profiles every month for you to try out.</p>
+        </div>
 
-			<div class="step">
-				02
-  Choose the frequency
-  Customize your order frequency, quantity, even your roast style and grind type. 
-  Pause, skip or cancel your subscription with no commitment through our online portal.
-
-			</div>
+      </div>
 
 			<div class="step">
-				03
-  			Receive and enjoy!
-  We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning 
-  world-class coffees curated to provide a distinct tasting experience.
+
+				<div class="step-number">
+          <h4>02</h4>
+        </div>
+
+        <div class="step-information">
+          <h3>Choose the frequency</h3>
+          <p>Customize your order frequency, quantity, even your roast style and grind type. Pause, skip or cancel your subscription with no commitment through our online portal. </p>
+        </div>
 
 			</div>
 
+			<div class="step">
+
+				<div class="step-number">
+          <h4>03</h4>
+        </div>
+
+        <div class="step-information">
+          <h3>Receive and enjoy!</h3>
+          <p>We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning world-class coffees curated to provide a distinct tasting experience.</p>
+        </div>
+  
+			</div>
 
 		</div>
 
+    <a class="button" href="#">Create your plan</a>
+
 	</section>
-  
 
-  
 
-  03
-  Receive and enjoy!
-  We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning 
-  world-class coffees curated to provide a distinct tasting experience.
+  <footer>
+    <img class="footer-logo" src="./assets/shared/desktop/logo.svg" alt="Coffeeroasters">
+    <nav class="footer-navigation">
+      <ul>
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">About us</a>
+        </li>
+        <li>
+          <a href="#">Create your plan</a>
+        </li>
+      </ul>
+    </nav>
 
-  Create your plan
+    <div class="social-links">
+      <img src="./assets/shared/desktop/icon-facebook.svg" alt="facebook">
+      <img src="./assets/shared/desktop/icon-twitter.svg" alt="twitter">
+      <img src="./assets/shared/desktop/icon-instagram.svg" alt="instagram">
+    </div>
 
-  Home
-  About us
-  Create your plan
-</>body>
+  </footer>
+
+</body>
 </html>
