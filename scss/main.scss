@@ -156,6 +156,9 @@ header {
         font-size: 2.5rem;
         color: $grey;
         margin-bottom: 1.5rem;
+        background: -webkit-linear-gradient($grey, $light-cream);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
     
 }
@@ -179,6 +182,7 @@ header {
         color: $dark-grey-blue;
         margin-bottom: 1rem;
         font-size: 1.5rem;
+        
     }
 
     p {
@@ -221,10 +225,20 @@ header {
     }
 
     .benefits-container {
-        background-color: black;
         color: $light-cream;
         display: flex;
         flex-direction: column;
+        height: 100%;
+        position: relative;
+
+        .background {
+            position: absolute;
+            height: 50%;
+            width: 100%;
+            z-index: -1;
+            background-color: $dark-grey-blue;
+            border-radius: 0px 0px 10px 10px;
+        }
 
         .benefit-card {
             width: 85%;
@@ -335,6 +349,7 @@ footer {
 
     .footer-logo {
         margin-bottom: 3rem;
+        fill: white;
     }
 
     .footer-navigation {
@@ -483,6 +498,21 @@ footer {
 
     .steps-container {
         display: flex;
+        margin-bottom: unset;
+    }
+
+    .step {
+        width: 33.33%;
+        padding-right: 10px;
+    }
+
+    .footer-navigation {
+        ul {
+            display: flex;
+            margin: 0 auto;
+            width: 17.6875rem;
+            justify-content: space-around;
+        }
     }
     
 
