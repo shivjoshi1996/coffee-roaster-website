@@ -1,0 +1,214 @@
+$dark-cyan: #0E8784;
+$light-cream: #FEFCF7;
+$dark-grey-blue: #333D4B;
+$grey: #83888F;
+$pale-orange: #FDD6BA;
+
+$heading-font: 'Fraunces', serif;
+$body-font: 'Barlow', sans-serif;
+
+:root {
+    font-size: 1em;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    
+}
+
+h1, h2, h3 {
+    font-family: $heading-font;
+}
+
+p {
+    font-family: $body-font;
+}
+
+.desktop-nav { 
+    display: none;
+}
+
+.mobile-nav {
+    display: flex;
+    width: 100%;
+    height: 5rem;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.mobile-logo {
+    height: 1.2rem;
+    margin-left: 2rem;
+}
+
+.mobile-hamburger {
+    margin-right: 2rem;
+}
+
+
+header {
+
+    text-align: center;
+    color: $light-cream;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    background-image: url(/starter-code/assets/home/mobile/image-hero-coffeepress.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-bottom: 7.5rem;
+    min-height: 31.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+        margin-bottom: 1.5rem;
+        font-size: 2.5rem;
+         
+    }
+    p {
+        margin-bottom: 24px;
+        line-height: 1.5rem;
+        font-size: 0.9375rem;
+        opacity: 70%;
+    }
+    button {
+        margin: 0 auto;
+        width: 80%;
+        text-align: center;
+        padding: 0.9375rem 1.9375rem 0.9375rem 1.9375rem;
+        background-color: $dark-cyan;
+        color: $light-cream;
+        border-radius: 10px;
+        border: none;
+        font-family: $heading-font;
+        cursor: pointer;
+        font-size: 1.2rem;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        opacity: 90%;
+    }
+       
+
+}
+
+.our-collection {
+    width: 90%;
+    margin: 0 auto;
+
+    h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        color: $grey;
+        margin-bottom: 1.5rem;
+    }
+    
+}
+
+.collection-container {
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.collection-item {
+
+    img {
+        height: 151px;
+        margin-bottom: 1.5rem;
+    }
+
+    h3 {
+        color: $dark-grey-blue;
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+
+    p {
+        margin-bottom: 3rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        color: $dark-grey-blue;
+        font-size: 15px;
+    }
+
+}
+
+
+.why-choose-us {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    
+    .why-choose-us-heading {
+        background-color: $dark-grey-blue;
+        border-radius: 0.625rem 0.625rem 0rem 0rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        padding-top: 4rem;
+
+        h2, p {
+            color: $light-cream;
+        }
+        h2 {
+            font-size: 1.75rem;
+        }
+        p {
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+            font-size: 0.9375rem;
+            opacity: 70%;
+            line-height: 1.5;
+        }
+    }
+
+    .benefits-container {
+        background-color: black;
+        color: $light-cream;
+        display: flex;
+        flex-direction: column;
+
+        .benefit-card {
+            width: 85%;
+            margin: 0 auto;
+            background-color: $dark-cyan;
+            min-height: 23.875rem;
+            display: flex;
+            flex-direction: column;
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 10px;
+
+            img {
+                margin: 0 auto;
+                height: auto;
+                width: 72px;
+                margin-top: 72px;
+                margin-bottom: 3.5rem;
+            }
+            h3 {
+                font-size: 24px;
+                padding-bottom: 24px;
+            }
+            p {
+                line-height: 1.5;
+                margin-left: 2.5rem;
+                margin-right: 2.5rem;
+            }
+
+        }
+    }
+
+}
+
