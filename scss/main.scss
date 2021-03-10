@@ -74,12 +74,62 @@ li {
 
 // Mobile nav
 
+.mobile-nav-wrapper {
+    height: 100%;
+    position: relative;
+}
+
+.mobile-nav-active {
+    position: fixed;
+    top: 0;
+    min-height: 100vh;
+    width: 100%;
+    z-index: 99;
+    background: rgb(255,255,255);
+    background: -moz-linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 52%, rgba(255,255,255,0.258140756302521) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 52%, rgba(255,255,255,0.258140756302521) 100%);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 52%, rgba(255,255,255,0.258140756302521) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+    display: none;
+}
+
+.mobile-nav-active-top {
+    display: flex;
+    width: 100%;
+    height: 5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mobile-nav-close {
+    margin-right: 2rem;
+}
+
+.mobile-nav-active-links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 5rem;
+
+    li {
+        margin-bottom: 2rem;
+    }
+    a {
+        font-family: $heading-font;
+        color: $dark-grey-blue;
+        font-size: 1.5rem;
+    }
+
+}
+
+
 .mobile-nav {
     display: flex;
     width: 100%;
     height: 5rem;
     align-items: center;
     justify-content: space-between;
+    position: relative;
     
 }
 
@@ -125,7 +175,7 @@ header {
     }
     button {
         margin: 0 auto;
-        width: 60%;
+        width: 80%;
         text-align: center;
         padding: 0.9375rem 1.9375rem 0.9375rem 1.9375rem;
         background-color: $dark-cyan;
@@ -136,6 +186,7 @@ header {
         cursor: pointer;
         font-size: 1.2rem;
         transition: 0.3s;
+        max-width: 15.625rem;
     }
 
     button:hover {
@@ -517,3 +568,37 @@ footer {
     
 
   }
+
+@media only screen and (min-width: 90rem) {
+
+    header {
+        background-image: url(../starter-code/assets/home/desktop/image-hero-coffeepress.jpg);
+
+        h1 {
+            font-size: 4.5rem;
+        }
+
+    }
+
+    .our-collection {
+
+        h2 {
+            font-size: 9.375rem;
+        }
+        
+        .collection-container {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+
+        }
+
+        .collection-item {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+    }
+
+}
