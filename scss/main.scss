@@ -601,4 +601,35 @@ footer {
 
     }
 
+    .why-choose-us {
+
+
+        .benefits-container {
+
+            flex-direction: row;
+
+            .benefit-card {
+                text-align: center;
+                flex-direction: column;
+                align-items: center;
+                padding-left: unset;
+                padding-right: unset;
+                margin-right: 10px;
+                margin-left: 10px;
+
+                .benefit-information {
+                    margin-left: unset;
+                }
+
+                p {
+                    margin-right: unset;
+                }
+
+            }
+
+
+        }
+        
+    }
+
 }
