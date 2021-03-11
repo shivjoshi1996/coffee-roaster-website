@@ -400,7 +400,11 @@ footer {
 
     .footer-logo {
         margin-bottom: 3rem;
-        fill: white;
+        
+    }
+
+    .logo-white-text {
+        fill:white;
     }
 
     .footer-navigation {
@@ -427,7 +431,8 @@ footer {
         justify-content: space-between;
 
         img {
-            width: 24px;   
+            width: 24px;  
+            height: 24px;
         }
     }
 
@@ -636,6 +641,34 @@ footer {
 
         }
         
+    }
+
+    footer {
+        display: flex;
+        min-height: unset;
+        align-items: center;
+
+        .footer-logo {
+            margin: unset;
+            margin-right: 100px;
+        }
+
+        .footer-navigation {
+            li {
+                margin-bottom: unset;
+            }
+        }
+        
+        .social-links {
+            width: 100%;
+            margin-top: unset;
+            justify-content: flex-end;
+
+            img {
+                margin-right: 24px;
+            }
+        }
+
     }
 
 }
