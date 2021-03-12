@@ -1,0 +1,43 @@
+// Variables
+
+$dark-cyan: #0E8784;
+$light-cream: #FEFCF7;
+$dark-grey-blue: #333D4B;
+$grey: #83888F;
+$pale-orange: #FDD6BA;
+
+$heading-font: 'Fraunces', serif;
+$body-font: 'Barlow', sans-serif;
+
+
+// Reset
+
+:root {
+    font-size: 1em;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    
+}
+
+// Base Styles
+
+h1, h2, h3 {
+    font-family: $heading-font;
+}
+
+p {
+    font-family: $body-font;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
