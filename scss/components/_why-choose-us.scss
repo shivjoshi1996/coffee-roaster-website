@@ -1,0 +1,144 @@
+// Homepage - Why choose us section
+
+.why-choose-us {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    
+    .why-choose-us-heading {
+        background-color: $dark-grey-blue;
+        border-radius: 0.625rem 0.625rem 0rem 0rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        padding-top: 4rem;
+
+
+        @include breakpoint-up('medium') {
+            padding-left: 74px;
+            padding-right: 74px; 
+        }   
+    
+
+        h2, p {
+            color: $light-cream;
+        }
+        h2 {
+            font-size: 1.75rem;
+        }
+        p {
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+            font-size: 0.9375rem;
+            opacity: 70%;
+            line-height: 1.5;
+        }
+    }
+
+    .benefits-container {
+        color: $light-cream;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        position: relative;
+
+        @include breakpoint-up('large') {
+            flex-direction: row;
+        }  
+
+        .background {
+            position: absolute;
+            height: 50%;
+            width: 100%;
+            z-index: -1;
+            background-color: $dark-grey-blue;
+            border-radius: 0px 0px 10px 10px;
+        }
+
+        .benefit-card {
+            width: 85%;
+            margin: 0 auto;
+            background-color: $dark-cyan;
+            min-height: 23.875rem;
+            display: flex;
+            flex-direction: column;
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 10px;
+
+            @include breakpoint-up('medium') {
+                text-align: left;
+                flex-direction: row;
+                min-height: 11.25rem;
+                padding-left: 4.375rem;
+                padding-right: 3rem;
+                align-items: center;
+            }  
+
+            @include breakpoint-up('large') {
+                text-align: center;
+                flex-direction: column;
+                align-items: center;
+                padding-left: 48px;
+                padding-right: 48px;
+                margin-right: 10px;
+                margin-left: 10px;
+                padding-top: 72px;
+                padding-bottom: 48px;
+            }  
+
+            img {
+                margin: 0 auto;
+                height: auto;
+                width: 72px;
+                margin-top: 72px;
+                margin-bottom: 3.5rem;
+
+                @include breakpoint-up('medium') {
+                    width: 3.5rem;
+                    height: auto;
+                    margin-top: unset;
+                    margin-bottom: unset;
+                }  
+
+                @include breakpoint-up('large') {
+                    margin-bottom: 3.5rem;
+                }  
+
+
+            }
+            h3 {
+                font-size: 24px;
+                padding-bottom: 24px;
+            }
+            p {
+                line-height: 1.5;
+                margin-left: 2.5rem;
+                margin-right: 2.5rem;
+
+                // should probably move margin left in mobile to the information container
+
+                @include breakpoint-up('medium') {
+                    margin-left: unset;
+                } 
+                @include breakpoint-up('large') {
+                    margin-right: unset;
+                }   
+            }
+
+            .benefit-information {
+
+                @include breakpoint-up('medium') {
+                    margin-left: 3.4375rem;
+                }  
+
+                @include breakpoint-up('large') {
+                    margin-left: unset;
+                }  
+
+            }
+
+        }
+
+    }
+
+}
