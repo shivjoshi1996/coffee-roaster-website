@@ -1,53 +1,3 @@
-// Homepage - Our collection Section 
-
-.our-collection {
-    width: 90%;
-    margin: 0 auto;
-
-    h2 {
-        text-align: center;
-        font-size: 2.5rem;
-        color: $grey;
-        margin-bottom: 1.5rem;
-        background: -webkit-linear-gradient($grey, $light-cream);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    
-}
-
-.collection-container {
-    text-align: center; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-}
-
-.collection-item {
-
-    img {
-        height: 151px;
-        margin-bottom: 1.5rem;
-    }
-
-    h3 {
-        color: $dark-grey-blue;
-        margin-bottom: 1rem;
-        font-size: 1.5rem;
-        
-    }
-
-    p {
-        margin-bottom: 3rem;
-        margin-left: 2rem;
-        margin-right: 2rem;
-        color: $dark-grey-blue;
-        font-size: 15px;
-    }
-
-}
-
 // Homepage - Why choose us section
 
 .why-choose-us {
@@ -192,67 +142,6 @@
 
 @media only screen and (min-width: 48em) {
 
-    //Switch mobile nav to desktop
-    .mobile-nav {
-        display: none;
-    }
-    .desktop-nav {
-        display: flex;
-    }
-
-    // Header alignment and image
-
-    header {
-        text-align: left;
-        padding-left: 58px;
-        padding-right: 233px;
-
-        background-image: url(../starter-code/assets/home/tablet/image-hero-coffeepress.jpg);
-
-        h1 {
-            font-size: 3rem;
-        }
-
-        button {
-            margin: unset;
-        }
-    }
-
-    // Our Collection
-
-    .our-collection {
-
-        h2 {
-            font-size: 5.8125rem;
-            margin-bottom: -2.8125rem;
-        }   
-        
-        .collection-container {
-           text-align: left;
-           width: 35.8125rem;
-           margin: 0 auto;
-        }
-
-        .collection-item {
-            display: flex;
-            margin-bottom: 2rem;
-            align-items: center;
-
-            img {
-                height: 12.0625rem;
-            }
-
-            h3 {
-                margin-bottom: 1.5rem;
-            }
-            p {
-                margin-left: unset;
-                line-height: 1.5;
-            }
-        }
-        
-    }
-
 
     .why-choose-us {
         
@@ -333,50 +222,12 @@
         width: 33.33%;
         padding-right: 10px;
     }
-
-    .footer-navigation {
-        ul {
-            display: flex;
-            margin: 0 auto;
-            width: 17.6875rem;
-            justify-content: space-around;
-        }
-    }
     
 
   }
 
 @media only screen and (min-width: 90em) {
 
-    header {
-        background-image: url(../starter-code/assets/home/desktop/image-hero-coffeepress.jpg);
-
-        h1 {
-            font-size: 4.5rem;
-        }
-
-    }
-
-    .our-collection {
-
-        h2 {
-            font-size: 9.375rem;
-        }
-        
-        .collection-container {
-            display: flex;
-            flex-direction: row;
-            width: 100%;
-
-        }
-
-        .collection-item {
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-        }
-
-    }
 
     .why-choose-us {
 
@@ -413,34 +264,6 @@
 
         }
         
-    }
-
-    footer {
-        display: flex;
-        min-height: unset;
-        align-items: center;
-
-        .footer-logo {
-            margin: unset;
-            margin-right: 100px;
-        }
-
-        .footer-navigation {
-            li {
-                margin-bottom: unset;
-            }
-        }
-        
-        .social-links {
-            width: 100%;
-            margin-top: unset;
-            justify-content: flex-end;
-
-            img {
-                margin-right: 24px;
-            }
-        }
-
     }
 
 }

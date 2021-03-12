@@ -5,11 +5,22 @@ footer {
     background-color: $dark-grey-blue;
     margin-bottom: 4.5rem;
     min-height: 21.625rem;
-
     padding: 55px;
+
+    @include breakpoint-up('large') {
+        display: flex;
+        min-height: unset;
+        align-items: center;
+    }
 
     .footer-logo {
         margin-bottom: 3rem;
+
+
+        @include breakpoint-up('large') {
+            margin: unset;
+            margin-right: 100px;
+        }
         
     }
 
@@ -19,8 +30,33 @@ footer {
 
     .footer-navigation {
 
+        ul {
+            @include breakpoint-up('large') {
+               display: flex;
+               width: 21.875rem;
+                
+            }
+            
+        }
+        
+
         li {
             margin-bottom: 1.5rem;
+
+            @include breakpoint-up('medium') {
+                display: flex;
+                margin: 0 auto;
+                margin-bottom: 1.5rem;
+                width: 17.6875rem;
+                justify-content: space-around;
+            }
+
+            @include breakpoint-up('large') {
+                margin-bottom: unset;
+                width: unset;
+                
+            }
+            
         }
         
         a {
@@ -40,9 +76,19 @@ footer {
         display: flex;
         justify-content: space-between;
 
+        @include breakpoint-up('large') {
+            width: 100%;
+            margin-top: unset;
+            justify-content: flex-end;
+        }
+
         img {
             width: 24px;  
             height: 24px;
+
+            @include breakpoint-up('large') {
+                margin-right: 24px;
+            }
         }
     }
 

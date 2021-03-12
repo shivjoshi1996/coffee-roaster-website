@@ -8,6 +8,12 @@
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
+
+    @include breakpoint-up('medium') {
+        display: flex;
+}
+
+    
 }
 
 .desktop-logo {
@@ -54,6 +60,7 @@
     height: 5rem;
     align-items: center;
     justify-content: space-between;
+
 }
 
 .mobile-nav-close {
@@ -85,6 +92,10 @@
     align-items: center;
     justify-content: space-between;
     position: relative;
+
+    @include breakpoint-up('medium') {
+            display: none;
+	}
     
 }
 

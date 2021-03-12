@@ -18,9 +18,26 @@ header {
     flex-direction: column;
     justify-content: center;
 
+    @include breakpoint-up('medium') {
+        text-align: left;
+        padding-left: 58px;
+        padding-right: 233px;
+
+        background-image: url(../starter-code/assets/home/tablet/image-hero-coffeepress.jpg);
+    }   
+
+    @include breakpoint-up('large') {
+        background-image: url(../starter-code/assets/home/desktop/image-hero-coffeepress.jpg); 
+    }   
+
+
     h1 {
         margin-bottom: 1.5rem;
         font-size: 2.5rem;
+
+        @include breakpoint-up('medium') {
+            font-size: 3rem;
+        }   
          
     }
     p {
@@ -29,6 +46,7 @@ header {
         font-size: 0.9375rem;
         opacity: 70%;
     }
+
     button {
         margin: 0 auto;
         width: 80%;
@@ -43,6 +61,11 @@ header {
         font-size: 1.2rem;
         transition: 0.3s;
         max-width: 15.625rem;
+
+        @include breakpoint-up('medium') {
+            margin: unset;
+        }   
+
     }
 
     button:hover {

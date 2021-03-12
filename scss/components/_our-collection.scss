@@ -1,0 +1,95 @@
+// Homepage - Our collection Section 
+
+.our-collection {
+    width: 90%;
+    margin: 0 auto;
+
+    h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        color: $grey;
+        margin-bottom: 1.5rem;
+        background: -webkit-linear-gradient($grey, $light-cream);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        @include breakpoint-up('medium') {
+            font-size: 5.8125rem;
+            margin-bottom: -2.8125rem;
+        }
+
+        @include breakpoint-up('large') {
+            font-size: 9.375rem;
+        }   
+    }
+    
+}
+
+.collection-container {
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include breakpoint-up('medium') {
+        text-align: left;
+        width: 35.8125rem;
+        margin: 0 auto;
+    }
+
+    @include breakpoint-up('large') {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+}
+
+.collection-item {
+
+    @include breakpoint-up('medium') {
+        display: flex;
+        margin-bottom: 2rem;
+        align-items: center;
+    }
+
+    @include breakpoint-up('large') {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    img {
+        height: 9.4375rem;
+        margin-bottom: 1.5rem;
+
+        @include breakpoint-up('medium') {
+            height: 12.0625rem;
+        }
+    }
+
+    h3 {
+        color: $dark-grey-blue;
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+
+        @include breakpoint-up('medium') {
+            margin-bottom: 1.5rem;
+        }
+        
+    }
+
+    p {
+        margin-bottom: 3rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        color: $dark-grey-blue;
+        font-size: 15px;
+
+        @include breakpoint-up('medium') {
+            margin-left: unset;
+            line-height: 1.5;
+        }
+    }
+
+}
