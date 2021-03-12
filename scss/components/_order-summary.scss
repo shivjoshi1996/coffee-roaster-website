@@ -1,0 +1,61 @@
+.order-summary {
+    background-color: $dark-grey-blue;
+    padding: 32px 25px;
+    border-radius: 10px;
+
+    h4 {
+        text-transform: uppercase;
+        font-family: $body-font;
+        font-weight: normal;
+        color: white;
+        opacity: 0.5;
+        margin-bottom: 8px;
+    }
+
+    p {
+        font-family: $heading-font;
+        color: white;
+        font-size: 24px;
+        line-height: 40px;
+    }
+}
+
+.button {
+    width: 80%;
+    text-align: center;
+    padding: 0.9375rem 1.9375rem 0.9375rem 1.9375rem;
+    background-color: $dark-cyan;
+    color: $light-cream;
+    border-radius: 10px;
+    border: none;
+    font-family: $heading-font;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: 0.3s;
+    max-width: 15.625rem;
+}
+
+
+
+.modal-container {
+    display: none;
+    min-height: 100vh;
+    min-width: 100vw;
+    position: absolute;
+    top: 0;
+    position: fixed;
+    background-color: black;
+    color: white;
+}
+
+.modal-header {
+    background-color: $dark-grey-blue;
+    height: 88px;
+    margin-top: 35px;
+    padding: 28px;
+}
+
+.modal-content {
+    background-color: #FEFCF7;
+    color: $grey;
+}

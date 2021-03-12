@@ -3,11 +3,9 @@
 .desktop-nav { 
 
     display: none;
-    width: 90%;
     height: 5.8125rem;
     align-items: center;
     justify-content: space-between;
-    margin: 0 auto;
 
     @include breakpoint-up('medium') {
         display: flex;
@@ -101,9 +99,7 @@
 
 .mobile-logo {
     height: 1.2rem;
-    margin-left: 2rem;
 }
 
 .mobile-hamburger {
-    margin-right: 2rem;
 }

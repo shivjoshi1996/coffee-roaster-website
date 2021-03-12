@@ -1,6 +1,4 @@
 .how-it-works {
-    width: 90%;
-    margin: 0 auto;
     text-align: center;
     margin-top: 7.75rem;
     margin-bottom: 7.5rem;
@@ -100,4 +98,17 @@
             } 
         }
     }
+}
+
+.how-it-works--black {
+    background-color: $dark-grey-blue;
+    margin: 0px -5% 0px -5%;
+    width: unset;
+    padding: 80px 24px 80px 24px;
+    border-radius: 10px;
+
+    h3, p {
+        color: white
+    }
+
 }

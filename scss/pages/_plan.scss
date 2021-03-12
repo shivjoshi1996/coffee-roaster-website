@@ -1,0 +1,25 @@
+// ---------- PLAN PAGE ---------
+
+.header--plan {
+    background-image: url(../starter-code/assets/plan/mobile/image-hero-blackcup.jpg);
+}
+
+
+.plan-sidebar {
+    display: none;
+
+    @include breakpoint-up('large') {
+        display: flex;
+        width: 20%;
+        position: sticky;
+    }   
+}
+
+.plan-section {
+
+    @include breakpoint-up('large') {
+        display: flex;
+        flex-wrap: wrap;
+    }   
+
+}
