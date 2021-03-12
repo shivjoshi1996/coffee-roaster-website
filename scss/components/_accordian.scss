@@ -26,11 +26,20 @@
     }
 }
 
+.active {
+    img {
+        transform: rotate(180deg);
+    }
+}
+
 
 .accordian-content {
+    flex-direction: column;
+    display: none;
+    overflow: hidden;
 
     @include breakpoint-up('medium') {
-        display: flex;
+        flex-direction: row;
     }   
 
 

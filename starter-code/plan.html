@@ -113,11 +113,11 @@
   <aside class="plan-sidebar"> 
 
     <div class="sidebar-content">
-      01 Preferences
-      02 Bean type
-      03 Quantity
-      04 Grind option
-      05 Deliveries
+      <h3>01 Preferences</h3>
+      <h3>02 Bean type</h3>
+      <h3>03 Quantity</h3>
+      <h3>04 Grind option</h3>
+      <h3>05 Deliveries</h3>
     </div>
   </aside>
 
@@ -263,15 +263,20 @@
 
   </div>
 
-  
-<div class="order-summary">
-  <h4>Order Summary</h4>
-  <p> “I drink coffee _____, with a _____ type of bean. _____ ground ala _____, 
-    sent to me _____.”</p>
+</section>
 
-</div>
+<div class="order-summary">  
+    <h4>Order Summary</h4>
+    <p> “I drink coffee _____, with a _____ type of bean. _____ ground ala _____, 
+      sent to me _____.”</p>
 
-<button class="button"> Create my plan!</button>
+    </div>    
+
+
+  <div class="plan-button">
+    <button class="button"> Create my plan!</button>
+  </div>
+
 
   <!-- Modal -->
   
@@ -298,7 +303,6 @@
   <!-- End modal -->
 
 
-</section>
 
 
 
@@ -332,6 +336,31 @@
   </footer>
 
 </div>
+
+<script>
+
+var acc = document.getElementsByClassName("accordian-header");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+    console.log(i);
+    console.log(acc);
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "flex") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "flex";
+    }
+  });
+}
+
+</script>
 
 </body>
 
