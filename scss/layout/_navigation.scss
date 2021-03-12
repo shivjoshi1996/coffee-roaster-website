@@ -1,0 +1,98 @@
+// Desktop Nav
+
+.desktop-nav { 
+
+    display: none;
+    width: 90%;
+    height: 5.8125rem;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.desktop-logo {
+    height: 1.625rem;
+}
+
+.desktop-nav-links {
+    display: flex;
+}
+
+.desktop-nav-links a {
+    margin-left: 2rem;
+    color: $grey;
+    text-transform: uppercase;
+    font-family: $body-font;
+    font-weight: 900;
+    font-size: 12px;
+    letter-spacing: 0.92px;
+}
+
+// Mobile nav
+
+.mobile-nav-wrapper {
+    position: relative;
+}
+
+.mobile-nav-active {
+    position: fixed;
+    top: 0;
+    min-height: 100vh;
+    width: 100%;
+    z-index: 99;
+    background: rgb(255,255,255);
+    background: -moz-linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 52%, rgba(255,255,255,0.258140756302521) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 52%, rgba(255,255,255,0.258140756302521) 100%);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 52%, rgba(255,255,255,0.258140756302521) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+    display: none;
+}
+
+.mobile-nav-active-top {
+    display: flex;
+    width: 100%;
+    height: 5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mobile-nav-close {
+    margin-right: 2rem;
+}
+
+.mobile-nav-active-links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 5rem;
+
+    li {
+        margin-bottom: 2rem;
+    }
+    a {
+        font-family: $heading-font;
+        color: $dark-grey-blue;
+        font-size: 1.5rem;
+    }
+
+}
+
+
+.mobile-nav {
+    display: flex;
+    width: 100%;
+    height: 5rem;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    
+}
+
+.mobile-logo {
+    height: 1.2rem;
+    margin-left: 2rem;
+}
+
+.mobile-hamburger {
+    margin-right: 2rem;
+}
