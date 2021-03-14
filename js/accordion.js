@@ -45,8 +45,12 @@ for (var x = 0; x < accordionOption.length; x++) {
       });
   
       this.classList.toggle("option-active");
-      // console.log(this);
+      console.log(this.children[0].textContent);
       // console.log(this.parentElement);
+
+      if (this.children[0].textContent === "Capsule") {
+        document.querySelector(".accordian-4").style.display = "none";
+      }
       
     }
 
