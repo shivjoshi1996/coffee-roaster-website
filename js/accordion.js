@@ -21,6 +21,7 @@ for (i = 0; i < accordianHeaders.length; i++) {
 
 
 var accordionContent = document.getElementsByClassName("accordion-content");
+
 var accordionOption = document.getElementsByClassName("accordion-option");
 
 
@@ -28,8 +29,26 @@ for (var x = 0; x < accordionOption.length; x++) {
 
   accordionOption[x].addEventListener("click", function(){
 
-    this.classList.toggle("option-active");
-    console.log(this);
+    var children = [...this.parentElement.children];
+
+    if (this.classList.contains("option-active")) {
+      this.classList.remove("option-active");
+    } else {
+
+      children.forEach(child => {
+
+        if (child.classList.contains("option-active")) {
+            
+          child.classList.remove("option-active");
+        }
+  
+      });
+  
+      this.classList.toggle("option-active");
+      // console.log(this);
+      // console.log(this.parentElement);
+      
+    }
 
   });
 }
