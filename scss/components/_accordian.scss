@@ -1,5 +1,5 @@
 
-.accordian-container {
+.accordion-container {
     margin-bottom: 120px;
 
     @include breakpoint-up('large') {
@@ -8,7 +8,7 @@
 }
 
 
-.accordian-header {
+.accordion-header {
     display: flex;
     align-items: center;
     margin-bottom: 32px;
@@ -26,14 +26,14 @@
     }
 }
 
-.active {
+.accordion-header--active {
     img {
         transform: rotate(180deg);
     }
 }
 
 
-.accordian-content {
+.accordion-content {
     flex-direction: column;
     display: none;
     overflow: hidden;
@@ -41,12 +41,10 @@
     @include breakpoint-up('medium') {
         flex-direction: row;
     }   
-
-
 }
 
 
-.accordian-option {
+.accordion-option {
     background-color: #F4F1EB;
     padding: 25px;
     border-radius: 8px;
@@ -81,6 +79,18 @@
         padding: 32px 26px 57px 26px;
     }  
 
+}
+
+.option-active {
+    background-color: #0E8784;
+
+    h3, p {
+        color: white;
+    }
+    
+    &:hover {
+        background-color: #0E8784;
+    }
 }
 
 

@@ -6,6 +6,8 @@
   <link rel="stylesheet" href="../css/main.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;800&family=Fraunces:wght@900&display=swap" rel="stylesheet">
+  <script src="../js/accordion.js" async></script>
+  <script src="../js/mobile-nav.js" async></script>
 
   <title>Frontend Mentor | Coffeeroasters subscription site</title>
 </head>
@@ -17,13 +19,13 @@
   <div class="mobile-nav-wrapper">
     <nav class="mobile-nav">
       <img class="mobile-logo" src="./assets/shared/desktop/logo.svg" alt="Logo">
-      <img class="mobile-hamburger" src="./assets/shared/mobile/icon-hamburger.svg" alt="">
+      <img class="mobile-hamburger" id="hamburger" src="./assets/shared/mobile/icon-hamburger.svg" alt="">
     </nav>
 
-    <div class="mobile-nav-active">
+    <div class="mobile-nav-active" id="mobile-nav-active">
       <div class="mobile-nav-active-top">
-        <img class="mobile-logo" src="./assets/shared/desktop/logo.svg" alt="">
-        <img class="mobile-nav-close" src="./assets/shared/mobile/icon-close.svg" alt="">
+        <img class="mobile-logo"src="./assets/shared/desktop/logo.svg" alt="">
+        <img class="mobile-nav-close" id="close-button" src="./assets/shared/mobile/icon-close.svg" alt="">
       </div>
 
 
@@ -122,29 +124,29 @@
   </aside>
 
 
-  <div class="accordian-container">
+  <div class="accordion-container">
 
 
-    <div class="accordian">
+    <div class="accordion">
 
-      <div class="accordian-header">
+      <div class="accordion-header">
         <h2>How do you drink your coffee?</h2>
         <img src="./assets/plan/desktop/icon-arrow.svg" alt="">
       </div>
 
-      <div class="accordian-content">
+      <div class="accordion-content">
 
-        <div class="accordian-option">
+        <div class="accordion-option">
           <h3>Capsule</h3>
           <p>Compatible with Nespresso systems and similar brewers</p>
         </div>
 
-        <div class="accordian-option">
+        <div class="accordion-option">
           <h3>Filter</h3>
           <p>For pour over or drip methods like Aeropress, Chemex, and V60</p>
         </div>
 
-        <div class="accordian-option">
+        <div class="accordion-option">
           <h3>Espresso</h3>
           <p>Dense and finely ground beans for an intense, flavorful experience</p>
         </div>
@@ -152,26 +154,26 @@
       </div>
     </div>
 
-    <div class="accordian">
+    <div class="accordion">
 
-      <div class="accordian-header">
+      <div class="accordion-header">
         <h2>What type of coffee?</h2>
         <img src="./assets/plan/desktop/icon-arrow.svg" alt="">
       </div>
 
-      <div class="accordian-content">
+      <div class="accordion-content">
 
-        <div class="accordian-option">
+        <div class="accordion-option">
           <h3>Single origin</h3>
           <p>Distinct, high quality coffee from a specific family-owned farm</p>
         </div>
 
-        <div class="accordian-option">
+        <div class="accordion-option">
           <h3>Decaf</h3>
           <p>Just like regular coffee, except the caffeine has been removed</p>
         </div>
 
-        <div class="accordian-option">
+        <div class="accordion-option">
           <h3>Blended</h3>
           <p>Combination of two or three dark roasted beans of organic coffees</p>
         </div>
@@ -180,26 +182,26 @@
     </div>
 
 
-    <div class="accordian">
+    <div class="accordion">
 
-      <div class="accordian-header">
+      <div class="accordion-header">
         <h2>How much would you like?</h2>
         <img src="./assets/plan/desktop/icon-arrow.svg" alt="">
       </div>
 
-      <div class="accordian-content">
+      <div class="accordion-content">
 
-        <div class="accordian-option">
+        <div class="accordion-option">
           <h3>250g</h3>
           <p>Perfect for the solo drinker. Yields about 12 delicious cups.</p>
         </div>
 
-        <div class="accordian-option">
+        <div class="accordion-option">
           <h3>500g</h3>
           <p>Perfect option for a couple. Yields about 40 delectable cups.</p>
         </div>
 
-        <div class="accordian-option">
+        <div class="accordion-option">
           <h3>1000g</h3>
           <p>Perfect for offices and events. Yields about 90 delightful cups.</p>
         </div>
@@ -207,26 +209,26 @@
       </div>
     </div>
 
-    <div class="accordian">
+    <div class="accordion">
 
-      <div class="accordian-header">
+      <div class="accordion-header">
         <h2>Want us to grind them?</h2>
         <img src="./assets/plan/desktop/icon-arrow.svg" alt="">
       </div>
 
-      <div class="accordian-content">
+      <div class="accordion-content">
 
-        <div class="accordian-option">
+        <div class="accordion-option">
           <h3>Wholebean</h3>
           <p>Best choice if you cherish the full sensory experience</p>
         </div>
 
-        <div class="accordian-option">
+        <div class="accordion-option">
           <h3>Filter</h3>
           <p>For drip or pour-over coffee methods such as V60 or Aeropress</p>
         </div>
 
-        <div class="accordian-option">
+        <div class="accordion-option">
           <h3>Cafetiére</h3>
           <p>Course ground beans specially suited for french press coffee</p>
         </div>
@@ -234,26 +236,26 @@
       </div>
     </div>
 
-    <div class="accordian">
+    <div class="accordion">
 
-      <div class="accordian-header">
+      <div class="accordion-header">
         <h2>How often should we deliver?</h2>
         <img src="./assets/plan/desktop/icon-arrow.svg" alt="">
       </div>
 
-      <div class="accordian-content">
+      <div class="accordion-content">
 
-        <div class="accordian-option">
+        <div class="accordion-option">
           <h3>Every week</h3>
           <p>$14.00 per shipment. Includes free first-class shipping.</p>
         </div>
 
-        <div class="accordian-option">
+        <div class="accordion-option">
           <h3>Every 2 weeks</h3>
           <p>$17.25 per shipment. Includes free priority shipping.</p>
         </div>
 
-        <div class="accordian-option">
+        <div class="accordion-option">
           <h3>Every month</h3>
           <p>$22.50 per shipment. Includes free priority shipping.</p>
         </div>
@@ -336,31 +338,6 @@
   </footer>
 
 </div>
-
-<script>
-
-var acc = document.getElementsByClassName("accordian-header");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    /* Toggle between adding and removing the "active" class,
-    to highlight the button that controls the panel */
-    this.classList.toggle("active");
-    console.log(i);
-    console.log(acc);
-
-    /* Toggle between hiding and showing the active panel */
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "flex") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "flex";
-    }
-  });
-}
-
-</script>
 
 </body>
 
