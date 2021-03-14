@@ -40,6 +40,7 @@
 
 .mobile-nav-active {
     position: fixed;
+    left: 0;
     top: 0;
     min-height: 100vh;
     width: 100%;
@@ -50,19 +51,17 @@
     background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 52%, rgba(255,255,255,0.258140756302521) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
     display: none;
+    
 }
 
 .mobile-nav-active-top {
     display: flex;
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
     height: 5rem;
     align-items: center;
     justify-content: space-between;
 
-}
-
-.mobile-nav-close {
-    margin-right: 2rem;
 }
 
 .mobile-nav-active-links {
@@ -99,7 +98,4 @@
 
 .mobile-logo {
     height: 1.2rem;
-}
-
-.mobile-hamburger {
 }

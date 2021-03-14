@@ -111,4 +111,22 @@
         color: white
     }
 
+    h4 {
+        &::before {
+            background-color: transparent;
+        }
+    }
+
+
+    .steps-container {
+
+            &::before {
+                width: 67%;
+                left: 1.5%;
+            
+            }
+    
+        }
+
+         
 }
