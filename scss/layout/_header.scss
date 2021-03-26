@@ -6,7 +6,7 @@ header {
     color: $light-cream;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    background-image: url(../starter-code/assets/home/mobile/image-hero-coffeepress.jpg);
+    background-image: url(/assets/home/mobile/image-hero-coffeepress.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10px;
@@ -21,11 +21,11 @@ header {
         padding-left: 58px;
         padding-right: 233px;
 
-        background-image: url(../starter-code/assets/home/tablet/image-hero-coffeepress.jpg);
+        background-image: url(/assets/home/tablet/image-hero-coffeepress.jpg);
     }   
 
     @include breakpoint-up('large') {
-        background-image: url(../starter-code/assets/home/desktop/image-hero-coffeepress.jpg); 
+        background-image: url(/assets/home/desktop/image-hero-coffeepress.jpg); 
     }   
 
 
