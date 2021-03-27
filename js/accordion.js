@@ -62,6 +62,7 @@ for (var x = 0; x < accordionOption.length; x++) {
 
       if (this.children[0].textContent === "Capsule") {
         document.querySelector(".accordion-4").style.display = "none";
+        wantUsToGrindThem = "";
       } else {
         document.querySelector(".accordion-4").style.display = "block";
       }
@@ -116,11 +117,11 @@ for (var x = 0; x < accordionOption.length; x++) {
 
      
 
-      if (this.children[0].textContent === "Wholebean") {
+      if (this.children[0].textContent === "ground ala Wholebean") {
         wantUsToGrindThem = "Wholebean";
-      } else if (this.children[0].textContent === "Filter") {
+      } else if (this.children[0].textContent === "ground ala Filter") {
         wantUsToGrindThem = "Filter";
-      } else if (this.children[0].textContent === "Cafetiére") {
+      } else if (this.children[0].textContent === "ground ala Cafetiére") {
         wantUsToGrindThem = "Cafetiére";
       }
       
@@ -130,8 +131,8 @@ for (var x = 0; x < accordionOption.length; x++) {
 
      
 
-      if (this.children[0].textContent === "Every Week") {
-        howOftenShouldWeDeliver = "Every Week";
+      if (this.children[0].textContent === "Every week") {
+        howOftenShouldWeDeliver = "Every week";
       } else if (this.children[0].textContent === "Every 2 weeks") {
         howOftenShouldWeDeliver = "Every 2 weeks";
       } else if (this.children[0].textContent === "Every month") {
@@ -146,8 +147,8 @@ for (var x = 0; x < accordionOption.length; x++) {
 
       // Show order summary
     document.getElementById("order-summary-text").innerHTML = 
-    `I drink coffee ${howDoYouDrinkCoffee}, with a ${typeOfBean} type of bean. ${howMuchWouldYouLike} ground ala ${wantUsToGrindThem},
-    sent to me ${howOftenShouldWeDeliver}.`;
+    `I drink coffee <span> ${howDoYouDrinkCoffee}</span>, with a <span>${typeOfBean}</span> type of bean. <span> ${howMuchWouldYouLike} </span> <span>${wantUsToGrindThem}</span>
+    sent to me <span>${howOftenShouldWeDeliver}</span>.`;
         
     }
 
