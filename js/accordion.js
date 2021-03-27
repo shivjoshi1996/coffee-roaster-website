@@ -25,6 +25,15 @@ var accordionContent = document.getElementsByClassName("accordion-content");
 var accordionOption = document.getElementsByClassName("accordion-option");
 
 
+// Initialize variables
+
+let howDoYouDrinkCoffee = "";
+let howMuchWouldYouLike = "";
+let typeOfBean = "";
+let wantUsToGrindThem = "";
+let howOftenShouldWeDeliver = "";
+
+
 for (var x = 0; x < accordionOption.length; x++) {
 
   accordionOption[x].addEventListener("click", function(){
@@ -62,7 +71,7 @@ for (var x = 0; x < accordionOption.length; x++) {
 
       // How Do you Drink your Coffee
 
-      let howDoYouDrinkCoffee = "";
+      
 
       if (this.children[0].textContent === "Capsule") {
         howDoYouDrinkCoffee = "using Capsules";
@@ -76,7 +85,7 @@ for (var x = 0; x < accordionOption.length; x++) {
 
       // What Type of Coffee
 
-      let typeOfBean = "";
+     
 
       if (this.children[0].textContent === "Single origin") {
         typeOfBean = "Single origin";
@@ -90,7 +99,7 @@ for (var x = 0; x < accordionOption.length; x++) {
 
       // How much would you like
 
-      let howMuchWouldYouLike = "";
+     
 
       if (this.children[0].textContent === "250g") {
         howMuchWouldYouLike = "250g";
@@ -102,6 +111,43 @@ for (var x = 0; x < accordionOption.length; x++) {
       
       console.log(howMuchWouldYouLike);
 
+
+      // Want us to grind them
+
+     
+
+      if (this.children[0].textContent === "Wholebean") {
+        wantUsToGrindThem = "Wholebean";
+      } else if (this.children[0].textContent === "Filter") {
+        wantUsToGrindThem = "Filter";
+      } else if (this.children[0].textContent === "Cafetiére") {
+        wantUsToGrindThem = "Cafetiére";
+      }
+      
+      console.log(wantUsToGrindThem);
+
+      // How Often Should we Deliver
+
+     
+
+      if (this.children[0].textContent === "Every Week") {
+        howOftenShouldWeDeliver = "Every Week";
+      } else if (this.children[0].textContent === "Every 2 weeks") {
+        howOftenShouldWeDeliver = "Every 2 weeks";
+      } else if (this.children[0].textContent === "Every month") {
+        howOftenShouldWeDeliver = "Every month";
+      }
+      
+      console.log(howOftenShouldWeDeliver);
+
+  
+    
+
+
+      // Show order summary
+    document.getElementById("order-summary-text").innerHTML = 
+    `I drink coffee ${howDoYouDrinkCoffee}, with a ${typeOfBean} type of bean. ${howMuchWouldYouLike} ground ala ${wantUsToGrindThem},
+    sent to me ${howOftenShouldWeDeliver}.`;
         
     }
 
