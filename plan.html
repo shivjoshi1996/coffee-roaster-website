@@ -6,9 +6,6 @@
   <link rel="stylesheet" href="../css/main.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;800&family=Fraunces:wght@900&display=swap" rel="stylesheet">
-  <script src="/js/accordion.js" async></script>
-  <script src="/js/mobile-nav.js" async></script>
-  <script src="/js/order-summary-modal.js" async></script>
 
   <title>Frontend Mentor | Coffeeroasters subscription site</title>
 </head>
@@ -136,17 +133,17 @@
 
       <div class="accordion-content">
 
-        <div class="accordion-option">
+        <div class="accordion-option"id="1-capsule">
           <h3>Capsule</h3>
           <p>Compatible with Nespresso systems and similar brewers</p>
         </div>
 
-        <div class="accordion-option">
+        <div class="accordion-option" id="1-filter">
           <h3>Filter</h3>
           <p>For pour over or drip methods like Aeropress, Chemex, and V60</p>
         </div>
 
-        <div class="accordion-option">
+        <div class="accordion-option" id="1-espresso">
           <h3>Espresso</h3>
           <p>Dense and finely ground beans for an intense, flavorful experience</p>
         </div>
@@ -163,17 +160,17 @@
 
       <div class="accordion-content">
 
-        <div class="accordion-option">
+        <div class="accordion-option" id="2-single-origin">
           <h3>Single origin</h3>
           <p>Distinct, high quality coffee from a specific family-owned farm</p>
         </div>
 
-        <div class="accordion-option">
+        <div class="accordion-option" id="2-decaf">
           <h3>Decaf</h3>
           <p>Just like regular coffee, except the caffeine has been removed</p>
         </div>
 
-        <div class="accordion-option">
+        <div class="accordion-option" id="2-blended">
           <h3>Blended</h3>
           <p>Combination of two or three dark roasted beans of organic coffees</p>
         </div>
@@ -191,17 +188,17 @@
 
       <div class="accordion-content">
 
-        <div class="accordion-option">
+        <div class="accordion-option" id="3-250g">
           <h3>250g</h3>
           <p>Perfect for the solo drinker. Yields about 12 delicious cups.</p>
         </div>
 
-        <div class="accordion-option">
+        <div class="accordion-option" id="3-500g">
           <h3>500g</h3>
           <p>Perfect option for a couple. Yields about 40 delectable cups.</p>
         </div>
 
-        <div class="accordion-option">
+        <div class="accordion-option" id="3-1000g">
           <h3>1000g</h3>
           <p>Perfect for offices and events. Yields about 90 delightful cups.</p>
         </div>
@@ -218,17 +215,17 @@
 
       <div class="accordion-content">
 
-        <div class="accordion-option">
+        <div class="accordion-option" id="4-wholebean">
           <h3>Wholebean</h3>
           <p>Best choice if you cherish the full sensory experience</p>
         </div>
 
-        <div class="accordion-option">
+        <div class="accordion-option" id="4-filter">
           <h3>Filter</h3>
           <p>For drip or pour-over coffee methods such as V60 or Aeropress</p>
         </div>
 
-        <div class="accordion-option">
+        <div class="accordion-option" id="4-cafetiere">
           <h3>Cafetiére</h3>
           <p>Course ground beans specially suited for french press coffee</p>
         </div>
@@ -245,17 +242,17 @@
 
       <div class="accordion-content">
 
-        <div class="accordion-option">
+        <div class="accordion-option" id="5-every-week">
           <h3>Every week</h3>
           <p>$14.00 per shipment. Includes free first-class shipping.</p>
         </div>
 
-        <div class="accordion-option">
+        <div class="accordion-option" id="5-every-two-weeks">
           <h3>Every 2 weeks</h3>
           <p>$17.25 per shipment. Includes free priority shipping.</p>
         </div>
 
-        <div class="accordion-option">
+        <div class="accordion-option" id="5-every-month">
           <h3>Every month</h3>
           <p>$22.50 per shipment. Includes free priority shipping.</p>
         </div>
@@ -269,7 +266,7 @@
 
 <div class="order-summary">  
     <h4>Order Summary</h4>
-    <p id="order-summary-text"> “I drink coffee _____, with a _____ type of bean. _____ ground ala _____, 
+    <p class="order-summary-text"> “I drink coffee _____, with a _____ type of bean. _____ ground ala _____, 
       sent to me _____.”</p>
 
     </div>    
@@ -344,6 +341,12 @@
 
 </div>
 
+
+<!-- <script src="/js/accordion.js"></script> -->
+<script src="/js/mobile-nav.js"></script>
+<!-- <script src="/js/order-summary-modal.js"></script> -->
+<!-- <script src="/js/accordion-logic.js"></script> -->
+<script src="/js/plan/plan.js" type="module"></script>
 </body>
 
 </html>
