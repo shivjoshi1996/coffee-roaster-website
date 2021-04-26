@@ -43,14 +43,26 @@ export function handleAccordionHeaderClick(event) {
     return optionsArray;
   }
 
+ function removeActiveClass(accordionId) {
+   const activeAccordions = document.querySelectorAll('.option-active');
+   console.log(activeAccordions);
+   for (const activeAccordion of activeAccordions) {
+     if (activeAccordion.id.includes(accordionId)) {
+       activeAccordion.classList.remove('option-active');
+     }
+   }
+
+ }
+
   function orderSummary(selectionArray) {
     const orderSummarySection = document.querySelector('.order-summary-text');
-    console.log(orderSummarySection);
     let accordion1 = '____,';
     let accordion2 = '____,';
     let accordion3 = '____,';
     let accordion4 = '____,';
     let accordion5 = '____.';
+    let orderSummary = '';
+    console.log(accordion1, accordion2, accordion3, accordion4, accordion5, orderSummary);
 
     // Put accordion 4 back on the page
     document.querySelector('.accordion-4').style.display = "block";
@@ -60,6 +72,10 @@ export function handleAccordionHeaderClick(event) {
       // Remove accordion 4 if capsule is selected
       document.querySelector('.accordion-4').style.display = "none";
       accordion4 = '_____,';
+      // TODO -- Need to remove the active class from the accordion choice
+      removeActiveClass('4-');
+      // remove the -4 value from selection array, so that it removes it from the order summary
+      selectionArray = selectionArray.filter(selection => (!selection.includes('4-')));
     }  
     if (selectionArray.includes('1-filter')) {
       accordion1 = 'filter';
@@ -106,6 +122,7 @@ export function handleAccordionHeaderClick(event) {
 
 
 
-    let orderSummary = `I drink coffee ${accordion1} with a ${accordion2} type of bean. ${accordion3} ground ala ${accordion4} sent to me ${accordion5}`;
+    orderSummary = `I drink coffee ${accordion1} with a ${accordion2} type of bean. ${accordion3} ground ala ${accordion4} sent to me ${accordion5}`;
     orderSummarySection.innerText = orderSummary;
+    console.log(orderSummary);
   }
