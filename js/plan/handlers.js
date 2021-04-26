@@ -59,7 +59,7 @@ export function handleAccordionHeaderClick(event) {
     let accordion1 = '____,';
     let accordion2 = '____,';
     let accordion3 = '____,';
-    let accordion4 = '____,';
+    let accordion4 = '____';
     let accordion5 = '____.';
     let orderSummary = '';
     console.log(accordion1, accordion2, accordion3, accordion4, accordion5, orderSummary);
