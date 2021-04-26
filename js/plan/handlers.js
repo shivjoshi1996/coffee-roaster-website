@@ -68,20 +68,20 @@ export function handleAccordionHeaderClick(event) {
     document.querySelector('.accordion-4').style.display = "block";
 
     if(selectionArray.includes('1-capsule')) {
-      accordion1 = 'Capsule';
+      accordion1 = 'using Capsules';
       // Remove accordion 4 if capsule is selected
       document.querySelector('.accordion-4').style.display = "none";
-      accordion4 = '_____,';
+      accordion4 = '';
       // TODO -- Need to remove the active class from the accordion choice
       removeActiveClass('4-');
       // remove the -4 value from selection array, so that it removes it from the order summary
       selectionArray = selectionArray.filter(selection => (!selection.includes('4-')));
     }  
     if (selectionArray.includes('1-filter')) {
-      accordion1 = 'filter';
+      accordion1 = 'as Filter';
     } 
     if (selectionArray.includes('1-espresso')) {
-      accordion1 = 'espresso';
+      accordion1 = 'as Espresso';
     }
     if (selectionArray.includes('2-single-origin')) {
       accordion2 = 'single origin';
@@ -102,13 +102,13 @@ export function handleAccordionHeaderClick(event) {
       accordion3 = '1000g';
     }
     if (selectionArray.includes('4-wholebean')) {
-      accordion4 = 'Wholebean';
+      accordion4 = 'ground ala Wholebean';
     }  
     if (selectionArray.includes('4-filter')) {
-      accordion4 = 'Filter';
+      accordion4 = 'ground ala Filter';
     } 
     if (selectionArray.includes('4-cafetiere')) {
-      accordion4 = 'Cafetiere';
+      accordion4 = 'ground ala Cafetiere';
     }
     if (selectionArray.includes('5-every-week')) {
       accordion5 = 'Every week';
@@ -122,7 +122,7 @@ export function handleAccordionHeaderClick(event) {
 
 
 
-    orderSummary = `I drink coffee ${accordion1} with a ${accordion2} type of bean. ${accordion3} ground ala ${accordion4} sent to me ${accordion5}`;
+    orderSummary = `I drink coffee ${accordion1} with a ${accordion2} type of bean. ${accordion3} ${accordion4}, sent to me ${accordion5}.`;
     orderSummarySection.innerText = orderSummary;
     console.log(orderSummary);
   }
