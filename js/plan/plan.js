@@ -1,4 +1,4 @@
-import { accordionHeaders, accordionContent, accordionOption, createMyPlanButton,  modalBackground, modal } from './elements.js';
+import { accordionHeaders, accordionOption, createMyPlanButton,  modalBackground } from './elements.js';
 import { handleAccordionChoiceClick, handleAccordionHeaderClick } from './handlers.js';
 import {showModal, closeModal} from './modal.js';
 

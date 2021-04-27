@@ -1,5 +1,3 @@
-let selections = [];
-
 // Function to add and remove active class on accordion headers
 export function handleAccordionHeaderClick(event) {
   event.currentTarget.classList.toggle("accordion-header--active");
@@ -73,7 +71,7 @@ export function handleAccordionHeaderClick(event) {
       // Remove accordion 4 if capsule is selected
       document.querySelector('.accordion-4').style.display = "none";
       accordion4 = '';
-      // TODO -- Need to remove the active class from the accordion choice
+      // Remove active class from element 
       removeActiveClass('4-');
       // remove the -4 value from selection array, so that it removes it from the order summary
       selectionArray = selectionArray.filter(selection => (!selection.includes('4-')));
