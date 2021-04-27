@@ -38,13 +38,11 @@ export function handleAccordionHeaderClick(event) {
     for (const option of options) {
       optionsArray.push(option.id);
     }
-    console.log(optionsArray);
     return optionsArray;
   }
 
  function removeActiveClass(accordionId) {
    const activeAccordions = document.querySelectorAll('.option-active');
-   console.log(activeAccordions);
    for (const activeAccordion of activeAccordions) {
      if (activeAccordion.id.includes(accordionId)) {
        activeAccordion.classList.remove('option-active');
@@ -61,7 +59,6 @@ export function handleAccordionHeaderClick(event) {
     let accordion4 = '____';
     let accordion5 = '____.';
     let orderSummary = '';
-    console.log(accordion1, accordion2, accordion3, accordion4, accordion5, orderSummary);
 
     // Put accordion 4 back on the page
     document.querySelector('.accordion-4').style.display = "block";
