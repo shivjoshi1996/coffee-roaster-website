@@ -9,3 +9,10 @@ export let accordionContent = document.getElementsByClassName("accordion-content
 // Get accordion options (each individual option)
 export let accordionOption = document.getElementsByClassName("accordion-option");
 
+// Button and Modal
+
+export let createMyPlanButton = document.querySelector("#create-plan-button");
+
+export let modalBackground = document.querySelector(".modal-background");
+
+export let modal = document.querySelector(".modal-container");

@@ -13,6 +13,7 @@ export function handleAccordionHeaderClick(event) {
   export function handleAccordionChoiceClick(event) {
     switchChoiceColour(event);
     orderSummary(accordionSelectionLogic()); 
+    perShipmentPriceLogic(accordionSelectionLogic());
   }
 
 
@@ -33,7 +34,7 @@ export function handleAccordionHeaderClick(event) {
       
   }
 
-  function accordionSelectionLogic() {
+  export function accordionSelectionLogic() {
     const options = document.querySelectorAll('.option-active');
     const optionsArray = []
     for (const option of options) {
@@ -54,7 +55,7 @@ export function handleAccordionHeaderClick(event) {
 
  }
 
-  function orderSummary(selectionArray) {
+  export function orderSummary(selectionArray) {
     const orderSummarySection = document.querySelector('.order-summary-text');
     let accordion1 = '____,';
     let accordion2 = '____,';
@@ -124,5 +125,33 @@ export function handleAccordionHeaderClick(event) {
 
     orderSummary = `I drink coffee ${accordion1} with a ${accordion2} type of bean. ${accordion3} ${accordion4}, sent to me ${accordion5}.`;
     orderSummarySection.innerText = orderSummary;
-    console.log(orderSummary);
+    return orderSummary;
+  }
+
+
+  function perShipmentPriceLogic(selectionArray) {
+    let everyWeekText =  "per shipment. Includes free first-class shipping";
+    let everyWeekAccordion = document.querySelector('.every-week-text');
+    let everyTwoWeeksText = "per shipment. Includes free priority shipping";
+    let everyTwoWeeksAccordion = document.querySelector('.every-two-weeks-text');
+    let everyMonthText = "per shipment. Includes free priority shipping.";
+    let everyMonthAccordion = document.querySelector('.every-month-text');
+
+    if (selectionArray.includes('3-250g')) {
+      everyWeekAccordion.innerText = `$7.20 ${everyWeekText}`; 
+      everyTwoWeeksAccordion.innerText = `$9.60 ${everyTwoWeeksText}`; 
+      everyMonthAccordion.innerText = `$12.00 ${everyMonthText}`; 
+    } else if (selectionArray.includes('3-500g')) {
+      everyWeekAccordion.innerText = `$13.00 ${everyWeekText}`; 
+      everyTwoWeeksAccordion.innerText = `$17.50 ${everyTwoWeeksText}`; 
+      everyMonthAccordion.innerText = `$22.00 ${everyMonthText}`; 
+    } else if (selectionArray.includes('3-1000g')) {
+      everyWeekAccordion.innerText = `$22.00 ${everyWeekText}`; 
+      everyTwoWeeksAccordion.innerText = `$32.00 ${everyTwoWeeksText}`; 
+      everyMonthAccordion.innerText = `$42.00 ${everyMonthText}`; 
+    } else {
+      everyWeekAccordion.innerText = `From $7.20 ${everyWeekText}`; 
+      everyTwoWeeksAccordion.innerText = `From $9.60 ${everyTwoWeeksText}`; 
+      everyMonthAccordion.innerText = `From $12.00 ${everyMonthText}`; 
+    }
   }

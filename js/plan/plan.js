@@ -1,7 +1,6 @@
-import { accordionHeaders, accordionContent, accordionOption } from './elements.js';
+import { accordionHeaders, accordionContent, accordionOption, createMyPlanButton,  modalBackground, modal } from './elements.js';
 import { handleAccordionChoiceClick, handleAccordionHeaderClick } from './handlers.js';
-
-console.log(accordionHeaders);
+import {showModal, closeModal} from './modal.js';
 
 // Add event listener to all accordion headers
 
@@ -15,3 +14,6 @@ for (const accordionChoice of accordionOption) {
   accordionChoice.addEventListener("click", handleAccordionChoiceClick);
 }
 
+createMyPlanButton.addEventListener("click", showModal);
+
+modalBackground.addEventListener("click", closeModal);
