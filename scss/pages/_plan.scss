@@ -1,7 +1,13 @@
 // ---------- PLAN PAGE ---------
 
 .header--plan {
-    background-image: url(/assets/plan/mobile/image-hero-blackcup.jpg);
+    background-image: url(../assets/plan/mobile/image-hero-blackcup.jpg);
+    @include breakpoint-up('medium') {
+       background-image: url(../assets/plan/tablet/image-hero-blackcup.jpg);
+    }   
+    @include breakpoint-up('large') {
+        background-image: url(../assets/plan/desktop/image-hero-blackcup.jpg);
+    }   
 }
 
 
